@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Europa-Reg' !important;
+}
+
+::selection {
+    background: #9c9c9c61 !important;
+}
+
+@font-face {
+    font-family: Europa-Bold;
+    src: url("../../public/fonts/europa-bold.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: Europa-Reg;
+    src: url("../../public/fonts/europa-regular.ttf") format("opentype");
+}
