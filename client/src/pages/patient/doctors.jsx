@@ -7,7 +7,7 @@ import Cookies from "js-cookie";
 import LogoutButton from "../../components/logout-button";
 import DoctorsList from "../../components/patient/doctors-list";
 
-export default function PatientDashboard() {
+export default function AllDoctors() {
   let currUser = Cookies.get("username") || "Doctor";
   let navigate = useNavigate();
 
@@ -35,15 +35,12 @@ export default function PatientDashboard() {
         <Heading
           fontWeight="normal"
           letterSpacing="tight"
-          fontFamily="Europa-Reg"
+          fontFamily="Europa-Bold"
           fontSize={["4xl", "4xl", "2xl", "3xl", "4xl"]}
           alignItems="center"
           color="#1c1c1c"
         >
-          Welcome back,{" "}
-          <Flex display="inline-flex" fontWeight="bold">
-            {currUser}
-          </Flex>
+          All doctors
         </Heading>
         <VStack
           borderRadius="lg"
@@ -52,7 +49,7 @@ export default function PatientDashboard() {
           alignItems="stretch"
           mt="7"
         >
-          <Heading
+          {/* <Heading
             mt="7"
             // mb="5"
             // mt="30px"
@@ -65,9 +62,10 @@ export default function PatientDashboard() {
             textAlign="left"
             color="#2e2e2e"
           >
-            My Profile
-          </Heading>
+            All doctors
+          </Heading> */}
         </VStack>
+        <DoctorsList />
       </Flex>
 
       {/* Column 3 */}
