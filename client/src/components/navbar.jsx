@@ -12,7 +12,7 @@ export default function Navbar() {
       w="100vw"
     >
       <Text fontFamily="Europa-Bold" fontSize="3xl" letterSpacing="-0.7px">
-        medexa
+        Medexa
       </Text>
       <Flex fontWeight={500} fontSize="sm" gridGap={10}>
         <Link to="/">
