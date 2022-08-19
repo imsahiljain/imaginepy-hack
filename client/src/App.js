@@ -12,6 +12,7 @@ import ViewReports from "./pages/patient/reports";
 import Patients from "./pages/doctor/patients";
 import CreateReports from "./pages/doctor/reports";
 import Appointments from "./pages/doctor/appointments";
+import LearnMore from "./pages/patient/learn-more";
 
 function App() {
   Axios.defaults.withCredentials = true;
@@ -31,6 +32,7 @@ function App() {
         <Route path="/patient/profile" element={<PatientDashboard />} />
         <Route path="/patient/all-doctors" element={<AllDoctors />} />
         <Route path="/patient/reports" element={<ViewReports />} />
+        <Route path="/patient/learn-more" element={<LearnMore />} />
         <Route path="/logout" element={<LogoutPage />} />
       </Routes>
     </div>

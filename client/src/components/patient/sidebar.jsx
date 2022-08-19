@@ -35,7 +35,7 @@ const LinkItems = [
     id: 4,
     name: "Learn more",
     icon: MdPeopleOutline,
-    href: "/students",
+    href: "/learn-more",
   },
 ];
 
