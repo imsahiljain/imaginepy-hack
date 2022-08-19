@@ -31,10 +31,9 @@ export default function Hero() {
             </Text>
           </Heading>
           <Text color="gray.600" fontSize="2xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-            optio delectus ullam magni inventore nostrum voluptate tempora
-            dolore similique consectetur? dolore similique consectetur? dolore
-            similique consectetur? dolore similique consectetur?
+            Medexa is an online gateway that allows doctors and patients to
+            interact fluently with a few clicks, arrange online appointments,
+            and produce reports directly on the website.
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
