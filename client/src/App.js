@@ -8,6 +8,8 @@ import RegisterPage from "./pages/register";
 import DoctorDashboard from "./pages/doctor/index";
 import PatientDashboard from "./pages/patient/index";
 import AllDoctors from "./pages/patient/doctors";
+import ViewReports from "./pages/patient/reports";
+import Patients from "./pages/doctor/patients";
 
 function App() {
   Axios.defaults.withCredentials = true;
@@ -20,9 +22,11 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/doctor" element={<DoctorDashboard />} />
+        <Route path="/doctor/all-patients" element={<DoctorDashboard />} />
         <Route path="/patient" element={<PatientDashboard />} />
         <Route path="/patient/profile" element={<PatientDashboard />} />
         <Route path="/patient/all-doctors" element={<AllDoctors />} />
+        <Route path="/patient/reports" element={<ViewReports />} />
         <Route path="/logout" element={<LogoutPage />} />
       </Routes>
     </div>

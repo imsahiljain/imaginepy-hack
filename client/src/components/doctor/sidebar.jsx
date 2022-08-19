@@ -2,34 +2,35 @@ import React, { useEffect } from "react";
 import { Flex, Heading, Text, Icon, useToast } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import { MdWeb, MdTask, MdOutlineClass, MdPeopleOutline } from "react-icons/md";
+import {
+  MdWeb,
+  MdTask,
+  MdOutlineClass,
+  MdPeopleOutline,
+  MdOutlineHealthAndSafety,
+  MdOutlineChat,
+} from "react-icons/md";
 import Cookies from "js-cookie";
 import ProfileCard from "../profile-card";
 
 const LinkItems = [
   {
     id: 1,
-    name: "My Profile",
-    href: "/profile",
-    icon: MdOutlineClass,
+    name: "Patients",
+    href: "",
+    icon: MdOutlineHealthAndSafety,
   },
   {
     id: 2,
-    name: "Patients",
-    icon: MdWeb,
-    href: "/patients",
+    name: "Reports",
+    icon: MdTask,
+    href: "/reports",
   },
   {
     id: 3,
     name: "Appointments",
     href: "/appointments",
-    icon: MdTask,
-  },
-  {
-    id: 4,
-    name: "Students",
-    icon: MdPeopleOutline,
-    href: "/students",
+    icon: MdOutlineChat,
   },
 ];
 
@@ -93,7 +94,7 @@ export default function Sidebar(props) {
             {/* Link Items */}
 
             {LinkItems.map((link) => (
-              <NavLink to={`/teacher${link.href}`}>
+              <NavLink to={`/doctor${link.href}`}>
                 <Flex
                   id={link.id}
                   gridGap={3}

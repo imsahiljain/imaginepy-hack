@@ -123,7 +123,7 @@ function Schedule() {
         mt="4"
         onClick={handleAddEvent}
       >
-        Add Event
+        Confirm
       </Button>
       <Calendar
         localizer={localizer}

@@ -27,13 +27,13 @@ const LinkItems = [
   },
   {
     id: 3,
-    name: "Appointments",
-    href: "/appointments",
+    name: "Reports",
+    href: "/reports",
     icon: MdTask,
   },
   {
     id: 4,
-    name: "Students",
+    name: "Learn more",
     icon: MdPeopleOutline,
     href: "/students",
   },

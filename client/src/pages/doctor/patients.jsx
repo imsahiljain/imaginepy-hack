@@ -5,9 +5,9 @@ import Sidebar from "../../components/doctor/sidebar";
 import { useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
 import LogoutButton from "../../components/logout-button";
-import PatientList from "../../components/doctor/patient-list";
+import DoctorsList from "../../components/patient/doctors-list";
 
-export default function DoctorDashboard() {
+export default function Patients() {
   let currUser = Cookies.get("username") || "Doctor";
   let navigate = useNavigate();
 
@@ -20,7 +20,7 @@ export default function DoctorDashboard() {
     >
       {/* Column 1 */}
 
-      <Sidebar dashFor="doctors" />
+      <Sidebar dashFor="patients" />
 
       {/* Column 2 */}
       <Flex
@@ -35,28 +35,25 @@ export default function DoctorDashboard() {
         <Heading
           fontWeight="normal"
           letterSpacing="tight"
-          fontFamily="Europa-Reg"
+          fontFamily="Europa-Bold"
           fontSize={["4xl", "4xl", "2xl", "3xl", "4xl"]}
           alignItems="center"
           color="#1c1c1c"
         >
-          Welcome back,{" "}
-          <Flex display="inline-flex" fontWeight="bold">
-            {currUser}
-          </Flex>
+          Medical Reports
         </Heading>
         <VStack
           borderRadius="lg"
-          // w="100%"
+          w="100%"
           maxW={{ base: "90vw", sm: "80vw", lg: "50vw", xl: "30vw" }}
           alignItems="stretch"
-          // mt="7"
+          mt="7"
         >
-          <Heading
-            mt="70px"
+          {/* <Heading
+            mt="7"
             // mb="5"
             // mt="30px"
-            pb="4"
+            // mb="4"
             fontWeight="normal"
             letterSpacing="tight"
             fontFamily="Europa-Reg"
@@ -65,10 +62,10 @@ export default function DoctorDashboard() {
             textAlign="left"
             color="#2e2e2e"
           >
-            My Patients
-          </Heading>
-          <PatientList />
+            All doctors
+          </Heading> */}
         </VStack>
+        {/* <DoctorsList /> */}
       </Flex>
 
       {/* Column 3 */}
