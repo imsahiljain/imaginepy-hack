@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
 import LogoutButton from "../../components/logout-button";
 import DoctorsList from "../../components/patient/doctors-list";
+import ReportCreator from "../../components/doctor/reports/todo";
 
 export default function CreateReports() {
   let currUser = Cookies.get("username") || "Doctor";
@@ -66,6 +67,7 @@ export default function CreateReports() {
           </Heading> */}
         </VStack>
         {/* <DoctorsList /> */}
+        <ReportCreator />
       </Flex>
 
       {/* Column 3 */}

@@ -21,6 +21,9 @@ const currentport = process.env.PORT || 5000;
 // const multer = require("multer");
 // const upload = multer();
 
+const pdfTemplate = require("./temp");
+const pdf = require("html-pdf");
+
 //for whitelisting our react project
 const whitelist = ["http://localhost:3000"];
 const corsOptions = {
