@@ -6,8 +6,9 @@ import { useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
 import LogoutButton from "../../components/logout-button";
 import DoctorsList from "../../components/patient/doctors-list";
+import Schedule from "../../components/schedule";
 
-export default function CreateReports() {
+export default function Appointments() {
   let currUser = Cookies.get("username") || "Doctor";
   let navigate = useNavigate();
 
@@ -40,7 +41,7 @@ export default function CreateReports() {
           alignItems="center"
           color="#1c1c1c"
         >
-          Medical Reports
+          Appointments
         </Heading>
         <VStack
           borderRadius="lg"
@@ -66,6 +67,7 @@ export default function CreateReports() {
           </Heading> */}
         </VStack>
         {/* <DoctorsList /> */}
+        <Schedule />
       </Flex>
 
       {/* Column 3 */}
