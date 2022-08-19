@@ -11,6 +11,7 @@
     "date-fns": "^2.29.1",
     "dayzed": "^3.2.3",
     "js-cookie": "^3.0.1",
+    "js-file-download": "^0.4.12",
     "react": "^18.2.0",
     "react-big-calendar": "^1.5.0",
     "react-datepicker": "^4.8.0",

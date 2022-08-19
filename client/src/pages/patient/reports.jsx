@@ -5,7 +5,7 @@ import PatientSidebar from "../../components/patient/sidebar";
 import { useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
 import LogoutButton from "../../components/logout-button";
-import DoctorsList from "../../components/patient/doctors-list";
+import ReportsList from "../../components/patient/report-list";
 
 export default function ViewReports() {
   let currUser = Cookies.get("username") || "Doctor";
@@ -65,7 +65,7 @@ export default function ViewReports() {
             All doctors
           </Heading> */}
         </VStack>
-        {/* <DoctorsList /> */}
+        <ReportsList />
       </Flex>
 
       {/* Column 3 */}
